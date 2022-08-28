@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "code-pro";
+    src: local("Merienda"),
+     url(./Code-Pro.ttf)
+}
+
+@font-face {
+    font-family: "code-pro-bold";
+    src: local("Merienda"),
+     url(./Code-Pro-Black.ttf)
+}

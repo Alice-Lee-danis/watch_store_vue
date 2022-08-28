@@ -1,30 +1,39 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <h1 class="background-text">WATCH</h1>
+  <router-view></router-view>
 </template>
 
+<script setup>
+  import font from './assets/fonts/font.css'
+
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: code-pro;
+  }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  body {
+    background-color: #faecfd;
+  }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  h1 {
+    font-family: code-pro-bold;
+  }
+
+  .background-text {
+    position: absolute;
+    font-size: 400px;
+    font-weight: bold;
+    filter: blur(4px);
+    color:#80d4eb;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
 </style>
